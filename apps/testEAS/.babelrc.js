@@ -8,7 +8,7 @@ module.exports = function (api) {
     return {
       presets: [
         [
-          '@nx/react/babel',
+          'babel-preset-expo',
           {
             runtime: 'automatic',
           },

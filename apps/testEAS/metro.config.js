@@ -27,11 +27,11 @@ const customConfig = {
   },
   transformer: {
     ...expoConfig.transformer,
-    babelTransformerPath: require.resolve('react-native-svg-transformer'),
+    babelTransformerPath: require.resolve('react-native-svg-transformer/expo'),
     assetPlugins: ['expo-asset/tools/hashAssetFiles'],
     getTransformOptions: async () => ({
       transform: {
-        experimentalImportSupport: false,
+        experimentalImportSupport: true,
         inlineRequires: true,
       },
     }),
