@@ -9,9 +9,11 @@ import {
   StatusBar,
   TouchableOpacity,
   Linking,
+  Image,
 } from 'react-native';
 import Svg, { G, Path } from 'react-native-svg';
 import { getOS } from '@test-eas/utils';
+import testPng from './test.png';
 
 export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
@@ -32,6 +34,7 @@ export const App = () => {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}
         >
+          <Image source={testPng} style={{width: 200, height: 200}} resizeMode="contain"/>
           <View style={styles.section}>
             <Text style={styles.textLg}>Hello there,</Text>
             <Text
