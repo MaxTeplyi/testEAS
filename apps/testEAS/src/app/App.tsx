@@ -12,7 +12,6 @@ import {
   Image,
 } from 'react-native';
 import Svg, { G, Path } from 'react-native-svg';
-import { getOS } from '@test-eas/utils';
 import testPng from './test.png';
 
 export const App = () => {
@@ -42,7 +41,7 @@ export const App = () => {
               testID="heading"
               role="heading"
             >
-              Welcome TestEAS 👋 {getOS()}
+              Welcome TestEAS 👋
             </Text>
           </View>
           <View style={styles.section}>
